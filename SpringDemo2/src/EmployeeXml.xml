@@ -7,9 +7,13 @@
                http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
               
             <bean id = "employee" class = "spring.demo2.Employee">
-               <property name = "name" value = "Tamas SinghaRoy"></property>
+              <!--   <property name = "name" value = "Tamas SinghaRoy"></property>
                <property name = "id" value = "13"></property>
-               <property name = "age" value = "26"></property>
+               <property name = "age" value = "26"></property>-->
+           <!-- xml tags for constructor injection -->
+             <constructor-arg  value = "Manmath Kusheba Markunde"/>
+             <constructor-arg  value = "01"/>
+             <constructor-arg  value = "25"/>
              </bean>
  </beans>
                
