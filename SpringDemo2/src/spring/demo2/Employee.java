@@ -5,29 +5,39 @@ public class Employee {
 	private int Id;
 	private int Age;
 
+	//constructor Injection
+	
+	 public Employee(String name, int id, int age) {
+		this.Name = name;
+		this.Id = id;
+		this.Age = age;
+	}
+
 	public String getName() {
 		return Name;
 	}
 
-	public void setName(String name) {
+	/*public void setName(String name) {
 	      Name = name;
 	}
-
+*/
     public int getId() {
 		return Id;
 	}
 
-	public void setId(int id) {
+	/*public void setId(int id) {
 		Id = id;
 	}
-
+*/
 	public int getAge() {
 		return Age;
 	}
 
-	public void setAge(int age) {
+	/*public void setAge(int age) {
 		Age = age;
+		
 	}
+	*/
 
 	void DisplayInfo() {
 		System.out.println("Name:" + Name);
