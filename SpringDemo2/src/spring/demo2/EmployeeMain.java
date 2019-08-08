@@ -15,7 +15,9 @@ public class EmployeeMain {
 		Employee emp = (Employee)fac.getBean("employee");*/
 		ClassPathXmlApplicationContext res = new ClassPathXmlApplicationContext("EmployeeXml.xml");
 		Employee emp = (Employee)res.getBean("employee");
+		Employee emp1 = (Employee)res.getBean("employee1");
 		emp.DisplayInfo();
+		emp1.DisplayInfo();
 
 	}
 }
